@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карты WoT</title>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+</head>
+<body background="imgs/Аэродром+.jpg">
+
+<center>
+        <br><br>
+        <label for="list" id="lab">Выберите карту:</label>
+        <br><br>
+        <select id="list" name="menu" size="1">
+            <option value="Аэродром" selected>Аэродром</option>
+            <option value="Вестфилд">Вестфилд</option>
+            <option value="Виндсторм">Виндсторм</option>
+            <option value="Заполярье">Заполярье</option>
+            <option value="Карелия">Карелия</option>
+            <option value="Лайв Окс">Лайв Окс</option>
+            <option value="Ласвилль">Ласвилль</option>
+            <option value="Линия Зигфрида">Линия Зигфрида</option>
+            <option value="Малиновка">Малиновка</option>
+            <option value="Монастырь">Монастырь</option>
+            <option value="Мурованка">Мурованка</option>
+            <option value="Огненная Дуга">Огненная Дуга</option>
+            <option value="Перевал">Перевал</option>
+            <option value="Песчаная Река">Песчаная Река</option>
+            <option value="Провинция">Провинция</option>
+            <option value="Прохоровка">Прохоровка</option>
+            <option value="Редшир">Редшир</option>
+            <option value="Рудники">Рудники</option>
+            <option value="Руинберг">Руинберг</option>
+            <option value="Рыбацкая Бухта">Рыбацкая Бухта</option>
+            <option value="Священная Долина">Священная Долина</option>
+            <option value="Северогорск">Северогорск</option>
+            <option value="Скрытая Деревня">Скрытая Деревня</option>
+            <option value="Степи">Степи</option>
+            <option value="Тихий Берег">Тихий Берег</option>
+            <option value="Топь">Топь</option>
+            <option value="Тундра">Тундра</option>
+            <option value="Утёс">Утёс</option>
+            <option value="Фьорды">Фьорды</option>
+            <option value="Хайвей">Хайвей</option>
+            <option value="Харьков">Харьков</option>
+            <option value="Химельсдорф">Химельсдорф</option>
+            <option value="Эль-Халлуф">Эль-Халлуф</option>
+            <option value="Энск">Энск</option>
+            <option value="Эрленберг">Эрленберг</option>
+        </select>
+        <br><br>
+        <br><br>
+        <img id="map" src="imgs/Аэродром.png" width="300" height="300">
+</center>
+
+<script>
+
+    $('#list').change(function() {
+
+        map = $('#list').val();
+
+        img = $('#map');
+        img.attr("src","./imgs/" + map + ".png");
+
+        $('body').attr('background', "./imgs/" + map + "+.jpg");
+
+    });
+
+
+</script>
+
+
+</body>
+</html>

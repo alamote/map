@@ -1,0 +1,19 @@
+
+    #map {
+        box-shadow: 0 0 100px 10px #000;
+    }
+
+    #list {
+        width: 300px;
+        height: 30px;
+
+        font-size: 16px;
+        font-family: "Comic Sans MS";
+    }
+
+    body {
+        background-size: cover;
+
+        font-size: large;
+        font-family: "Comic Sans MS";
+    }
