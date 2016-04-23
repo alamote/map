@@ -5,13 +5,14 @@
     <title>Карты WoT</title>
     <script src="./js/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <script src="js/script.js"></script>
 
 </head>
-<body background="imgs/Аэродром+.jpg">
+<body background="http://savepic.su/7154609.jpg">
 
 <center>
         <br><br>
-        <label for="list" id="lab">Выберите карту:</label>
+        <span id="lab"><label for="list">Выберите карту:</label></span>
         <br><br>
         <select id="list" name="menu" size="1">
             <option value="Аэродром" selected>Аэродром</option>
@@ -52,7 +53,7 @@
         </select>
         <br><br>
         <br><br>
-        <img id="map" src="imgs/Аэродром.png" width="300" height="300">
+        <img id="map" src="http://savepic.su/7183281.png" width="300" height="300">
 </center>
 
 <script>
@@ -61,13 +62,10 @@
 
         map = $('#list').val();
 
-        img = $('#map');
-        img.attr("src","./imgs/" + map + ".png");
-
-        $('body').attr('background', "./imgs/" + map + "+.jpg");
+        $('#map').attr("src", sources[map]);
+        $('body').attr('background', sources[map + "+"]);
 
     });
-
 
 </script>
 

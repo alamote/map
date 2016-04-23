@@ -17,3 +17,6 @@
         font-size: large;
         font-family: "Comic Sans MS";
     }
+    #lab {
+        text-shadow: 0 0 15px white;
+    }
